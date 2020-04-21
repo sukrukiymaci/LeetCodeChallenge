@@ -9,7 +9,6 @@ public class HelloWorld{
         ArrayList<Integer> values = new ArrayList<>();        
         int [] nums = {0,1,0,3,12};
         int zeros= 0;
-        int [] others = new int [nums.length];
         int nonzeros=0;
         
       
@@ -27,30 +26,19 @@ public class HelloWorld{
             
         }
 
-        for(int var : others){
-            System.out.print(var + " ");
-        }
         
         for(int i=0; i< nonzeros; i++){
             
-        others[i]= values.get(i);    
-            
+        nums[i]= values.get(i);    
             
         }
-        System.out.println("\n ");
-/*        
-        for(int var : others){
-            System.out.println(var);
-        }
-*/        
-        System.out.println("\n : "+ zeros);
         
         for(int i = (nums.length-zeros) ; i<nums.length ; i++ ){
-            others[i] =0;
+            nums[i] =0;
         }
         
-        for(int var : others){
-            System.out.println(var);
+        for(int var : nums){
+            System.out.print(var+" ");
         }
         
         
